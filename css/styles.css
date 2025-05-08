@@ -1,38 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
-.container {
-  max-width: 375px;
-  background-color: #16171A;
-  border-radius: 40px;
-  height: 700px;
+.container-fluid .hello {
+  color: greenyellow;
+  background: black;
+  border: 1px solid black;
   font-family: "Nunito Sans", sans-serif; }
 
-.text {
-  font-size: 10px;
-  color: #FFFFFF; }
-
-.gpt {
-  padding: 12px 13px; }
-
-.price {
-  width: 172px;
-  height: 51px;
-  font-size: 34px;
-  color: #E4E4F0; }
-
-.adress {
-  display: inline-block;
-  width: 143px;
+.container {
+  background-color: #16171A;
   color: #FFFFFF;
-  overflow: hidden; }
+  border-radius: 40px;
+  font-size: 11px;
+  font-family: "Nunito Sans", sans-serif; }
 
-.days {
-  width: 92px;
-  color: #FFFFFF; }
+header {
+  margin-bottom: 5px; }
+  header ul {
+    list-style: none; }
+  header a {
+    text-decoration: none;
+    color: #FFFFFF; }
 
-.btc {
-  color: #FFFFFF; }
-
-.charts {
-  display: block;
-  height: 220px;
-  color: #FFFFFF; }
+.price .item {
+  font-size: 34px; }
+.price .days {
+  margin-left: 18px; }
