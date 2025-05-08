@@ -11,34 +11,23 @@
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col text-center">
-            <div class="hello">hello</div>
-        </div>
-        <div class="col g-0 text-center">
-            <div class="hello">hello</div>
-        </div>
-        <div class="col text-center">
-            <div class="hello">hello</div>
-        </div>
-    </div>
-</div>
-
-<br>
-<hr>
-<br>
-
 <div class="container">
 
     <header>
-        <div class="row">
-            <div class="col d-flex align-items-center gap-5">
-                <a href="#"><img src="img/chatGPT.svg" alt="chat_gpt"></a>
-                <ul class="d-flex align-items-center">
-                    <li><a href="#"><img src="img/Ethereum_icon.svg" alt="eth">ETH</a></li>
+        <div class="row align-items-center">
+            <div class="col d-flex align-items-center justify-content-center">
+                <a class="gpt" href="#"><img src="img/chatGPT.svg" alt="chat_gpt"></a>
+                <img class="img_net" src="img/Ethereum_icon.svg" alt="eth">
+                <ul class="d-flex p-4">
+                    <li>
+                        <a href="#">ETH</a>
+                        <ul class="dropdown-my">
+                            <li>BASE</li>
+                        </ul>
+                    </li>
                     <!--                        <li><a href="#"><img src="" alt="base"></a>BASE</li>-->
                 </ul>
+
             </div>
         </div>
     </header>
@@ -52,8 +41,9 @@
                     <div><img src="img/like.svg" alt="like"></div>
                 </div>
                 <div class="col d-flex align-items-center">
-                    <p class="adress">0xfca71d....ff410b25cbf8ad</p>
-                    <p class="days">| 553 days</p>
+                    <p>0xfca71d....ff410b25cbf8ad</p>
+                    <p>|</p>
+                    <p> 553 days</p>
                 </div>
             </div>
         </section>
@@ -61,16 +51,18 @@
         <section class="charts">
             <div class="row">
                 <div class="col">
-                    // CHARTS
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="date">
             <div class="row">
-                <div class="col-6 d-flex flex-column gap-3">
+                <div class="col-6 d-flex flex-column align-items-center gap-3">
 
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="d-flex align-items-center  gap-2">
                         <img src="img/Bitcoin.svg" alt="btc">
                         <span>bitcoin</span>
                         <img src="img/copy_next.svg" alt="copy_next">
@@ -78,7 +70,7 @@
 
                     <div class="d-flex gap-2">
                         <div>
-                            <p>1 /2</p>
+                            <p>1 / 2</p>
                             <p>10min</p>
                         </div>
 
@@ -92,7 +84,7 @@
 
                 </div>
 
-                <div class="col-6 d-flex flex-column gap-3">
+                <div class="col-6 d-flex flex-column align-items-center gap-3">
 
                     <div class="d-flex align-items-center gap-2">
                         <img src="img/Bitcoin.svg" alt="btc">
@@ -100,9 +92,9 @@
                         <img src="img/copy_next.svg" alt="copy_next">
                     </div>
 
-                    <div class="d-flex gap-2">
+                    <div class="d-flex gap-2 before">
                         <div>
-                            <p>1 /2</p>
+                            <p>1 / 2</p>
                             <p>10min</p>
                         </div>
 
@@ -116,7 +108,7 @@
 
                 </div>
 
-                <div class="col-6 d-flex flex-column gap-3">
+                <div class="col-6 d-flex flex-column align-items-center gap-3">
 
                     <div class="d-flex align-items-center gap-2">
                         <img src="img/Bitcoin.svg" alt="btc">
@@ -126,7 +118,7 @@
 
                     <div class="d-flex gap-2">
                         <div>
-                            <p>1 /2</p>
+                            <p>1 / 2</p>
                             <p>10min</p>
                         </div>
 
@@ -139,15 +131,8 @@
                     </div>
 
                 </div>
-
-
             </div>
         </section>
-
-
-        </section>
-
-
     </main>
 
     <footer>
@@ -174,6 +159,7 @@
 </div>
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
